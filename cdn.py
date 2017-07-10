@@ -21,8 +21,6 @@ def replace_link(pelican):
                 with open(file_path, "r+") as f:
                     src = f.read()
                     for ext in cdn_type:
-                        pattern = r''
-                        repl = r''
                         keyword = 'src'
                         if ext == ".css":
                             keyword = 'href'
